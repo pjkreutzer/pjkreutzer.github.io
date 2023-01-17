@@ -12,8 +12,7 @@ about:
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 ---
 
-I am a PhD student in Economic History at Lund University. My PhD research focuses on environmental innovation, especially in the Swedish forest industry. Primarily, I am examining what role innovation can play in reducing emissions and conserving biodiversity.
-Another focus is on understanding how and why people innovate for the environment and under what circumstances innovations are successful in the long run.
+I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.
 
 The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden
 1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).
