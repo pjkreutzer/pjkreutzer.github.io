@@ -12,8 +12,7 @@ website:
 
 format:
   html:
-    theme: [cosmo]
-    css: styles.css
+    theme: [litera, styles.scss]
     toc: true
 
 
