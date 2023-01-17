@@ -1,7 +1,49 @@
 ---
-title: "pjkreutzer.github.io"
+title: "Philipp Jonas Kreutzer"
+about:
+    template: trestles
+    image: images/PhilippJonasKreutzer.jpg
+    links: 
+          - icon: twitter
+            href: https://twitter.com/pj_kreutzer
+          - icon: github
+            href: https://github.com/pjkreutzer
+          - text: "{{< fa envelope >}}"
+            href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 ---
 
-This is a Quarto website.
+I am a PhD student in Economic History at Lund University. My PhD research focuses on environmental innovation, especially in the Swedish forest industry. Primarily, I am examining what role innovation can play in reducing emissions and conserving biodiversity.
+Another focus is on understanding how and why people innovate for the environment and under what circumstances innovations are successful in the long run.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden
+1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).
+
+***
+
+## Education
+
+<p style="margin-left: 40px"><b>Ph.D. in Economic History</b>
+<br>Lund University, Sweden
+<br><i>August 2021 - now</i></p>
+
+<p style="margin-left: 40px"><b>M.Sc. in Innovation and Global Sustainable Development</b>
+<br>Lund University, Sweden
+<br><i>August 2019 - June 2021</i></p>
+
+<p style="margin-left: 40px"><b>B.Sc. in Business Psychology</b>
+<br>University of Applied Sciences Europe Iserlohn, Germany
+<br><i> 2015 - 2019</i></p>
+
+## Work experience
+
+<p style="margin-left: 40px"><b>Innovation Management Working Student</b>
+<br>Innoloft
+<br><i> 2019 - 2020</i></p>
+
+<p style="margin-left: 40px"><b>Business Development Intern</b>
+<br>Bridgefy
+<br><i> March 2018 - April 2018</i></p>
+
+<p style="margin-left: 40px"><b>HR Development, Training and Internal Communication Intern</b>
+<br>Lufthansa
+<br><i> February 2017 - August 2017</i></p>
