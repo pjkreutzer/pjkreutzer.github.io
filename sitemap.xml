@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/pjkreutzer/pjkreutzer.github.io/about.html</loc>
-    <lastmod>2023-01-17T11:32:08.240Z</lastmod>
+    <lastmod>2023-01-17T11:34:22.984Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/pjkreutzer/pjkreutzer.github.io/index.html</loc>
-    <lastmod>2023-01-17T11:32:08.527Z</lastmod>
+    <lastmod>2023-01-17T11:34:23.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pjkreutzer/pjkreutzer.github.io/outreach.html</loc>
+    <lastmod>2023-01-17T11:34:23.642Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/pjkreutzer/pjkreutzer.github.io/teaching.html</loc>
+    <lastmod>2023-01-17T11:34:23.955Z</lastmod>
   </url>
 </urlset>
