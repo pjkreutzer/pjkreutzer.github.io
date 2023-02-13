@@ -1,0 +1,7 @@
+---
+title: "The site you went looking for does not exist."
+page-layout: full
+---
+Try going back [home](index.qmd), or search for the site from the right corner.
+
+![Animation by Emmie Wahlström](images/jonas-walk.png){.center-cropped
