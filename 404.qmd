@@ -2,6 +2,17 @@
 title: "The site you went looking for does not exist."
 page-layout: full
 ---
-Try going back [home](index.qmd), or search for the site from the right corner.
 
-![Animation by Emmie Wahlström](images/jonas-walk.png){.center-cropped}
+Try going back [home](index.qmd), or search for the site from the top-right corner.
+
+![Animation by Emmie Wahlström](images/jonas-walk.GIF){.center-cropped}
+
+
+
+<style>
+    .center-cropped {
+    width: 20%;
+    object-fit: contain;
+    object-position: center;
+  }
+</style>

@@ -14,9 +14,3 @@ body {
     letter-spacing: -0.002em;
   }
   
-  .center-cropped {
-    object-fit: contain;
-    object-position: center;
-    clip-path: inset(20% 0 0 0);
-    padding-top: 0;
-  }
