@@ -1,5 +1,7 @@
 project:
   type: website
+  resources: 
+    -  "files/"
 
 website:
   title: "Philipp Jonas Kreutzer"
@@ -9,6 +11,9 @@ website:
         text: teaching
       - href: outreach.qmd
         text: outreach
+    
+    twitter-card:
+      creator: "@pj_kreutzer"
 
 format:
   html:
