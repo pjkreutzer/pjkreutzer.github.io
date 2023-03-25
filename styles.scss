@@ -14,3 +14,16 @@ body {
     letter-spacing: -0.002em;
   }
   
+  .container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust this value as needed */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

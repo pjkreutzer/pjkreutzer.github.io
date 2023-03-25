@@ -7,11 +7,14 @@ website:
   title: "Philipp Jonas Kreutzer"
   navbar:
     left:
+      - href: research.qmd
+        text: research
       - href: teaching.qmd
         text: teaching
       - href: outreach.qmd
         text: outreach
-    
+
+
     twitter-card:
       creator: "@pj_kreutzer"
 
