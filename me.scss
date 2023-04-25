@@ -1,0 +1,151 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;800;900&family=Inconsolata:wght@200;400;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$alabaster      : #FAF9F9 !default;
+$fiord 	        : #454f66 !default;
+$baltic-sea 	: #17151b !default;
+$bunting 	    : #172752 !default;
+$juniper        : #7B8F90 !default;
+$lunar-green    : #324737 !default;
+$bouquet 	    : #B786A5 !default;
+$regent-gray    : #848B99 !default;
+$storm-gray     : #716F82 !default;
+$fruit-salad 	: #4a9257 !default;
+$ochre 	        : #c7821f !default;
+$pomegranate 	: #f44336 !default;
+
+$white        : #fff;
+$primary      : $fiord;
+$light-accent : $juniper;
+$dark-accent  : $bunting;
+$info         : $fiord;
+$success      : $fruit-salad;
+$warning      : $ochre;
+$danger       : $pomegranate;
+
+$link-color   : $primary !default;
+$bg-color     : $white !default;
+
+$font-family  : "Lato", sans-serif !default;
+$heading-font : "Gothic A1", sans-serif !default;
+$monospace-font    : "Inconsolata", monospace !default;
+
+/*-- scss:rules --*/
+
+.warning {
+  color: $warning;
+}
+.info {
+  color: $info;
+}
+.danger {
+  color: $danger;
+}
+.success {
+  color: $success;
+}
+
+
+body {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-family: $font-family;
+    font-weight: 400;
+    letter-spacing: -0.002em;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust this value as needed */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.reveal .slide {
+  background-color: $bg-color;
+  color: $baltic-sea;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &.invert {
+    color: $alabaster;
+    background-color: $baltic-sea;
+  }
+}
+
+section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: $primary;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 2em;
+  text-transform: lowercase;
+  color: $primary;
+  word-spacing: 0.1em;
+}
+
+.emphasis {
+  font-weight: 900;
+  color: $info;
+}
+
+/* Define the card styles */
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-right: 0.5em;
+  border-radius: 6px;
+  color: inherit;
+  background: inherit;
+  background-color: inherit;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  &.fill-primary {
+    color: $alabaster;
+    background-color: $primary;
+  }
+
+  &.fill-dark-accent {
+    color: $alabaster;
+    background-color: $dark-accent;
+  }
+
+  &.fill-light-accent {
+    color: $alabaster;
+    background-color: $light-accent;
+  }
+
+  &.fill-dark {
+    color: $alabaster;
+    background-color: $info;
+  }
+}
+
+.empty {
+  color: inherit;
+  -webkit-text-stroke: 2px;
+  text-stroke: 2px;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
