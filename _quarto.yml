@@ -20,7 +20,7 @@ website:
 
 format:
   html:
-    theme: [litera, styles.scss]
+    theme: [litera, me.scss]
     toc: true
 
 

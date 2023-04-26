@@ -1,146 +1,156 @@
 /*-- scss:defaults --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;800;900&family=Inconsolata:wght@200;400;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+// fonts
 
-$alabaster      : #FAF9F9 !default;
-$fiord 	        : #454f66 !default;
-$baltic-sea 	: #17151b !default;
-$bunting 	    : #172752 !default;
-$juniper        : #7B8F90 !default;
-$lunar-green    : #324737 !default;
-$bouquet 	    : #B786A5 !default;
-$regent-gray    : #848B99 !default;
-$storm-gray     : #716F82 !default;
-$fruit-salad 	: #4a9257 !default;
-$ochre 	        : #c7821f !default;
-$pomegranate 	: #f44336 !default;
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Gothic+A1:wght@200;400;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;700&family=Inconsolata:wght@200;400;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$white        : #fff;
-$primary      : $fiord;
-$light-accent : $juniper;
-$dark-accent  : $bunting;
-$info         : $fiord;
-$success      : $fruit-salad;
-$warning      : $ochre;
+$font-family-sans-serif: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace    : "Ubunto Mono", monospace !default;
+
+$white: hsla(0, 0%, 100%, 1);
+$persian-blue: hsla(227, 100%, 21%, 1);
+$havelock-blue: hsla(227, 72%, 55%, 1);
+$gulf-blue: hsla(227, 89%, 22%, 1);
+$vulcan: hsla(240, 100%, 3%, 1);
+$ocean-green: hsl(152, 37%, 46%);
+$tussock: hsl(36, 54%, 51%);
+$pomegranate: hsl(4, 90%, 58%);
+
+$gray-100: hsl(210, 17%, 98%) !default;
+$gray-200: hsl(210, 16%, 93%) !default;
+$gray-300: hsl(0, 0%, 87%) !default;
+$gray-400: hsl(210, 14%, 83%) !default;
+$gray-500: hsl(210, 11%, 71%) !default;
+$gray-600: hsl(210, 7%, 56%) !default;
+$gray-700: hsl(210, 9%, 31%) !default;
+$gray-800: hsl(210, 10%, 23%) !default;
+$gray-900: hsl(210, 11%, 15%) !default;
+$black:    hsl(0, 0%, 0%) !default;
+
+
+$primary      : $havelock-blue;
+$light-accent : $persian-blue;
+$dark-accent  : $gulf-blue;
+$dark-shade   : $vulcan;
+$default      : $gray-600;
+$info         : $dark-accent;
+$success      : $ocean-green;
+$warning      : $tussock;
 $danger       : $pomegranate;
 
-$link-color   : $primary !default;
-$bg-color     : $white !default;
-
-$font-family  : "Lato", sans-serif !default;
-$heading-font : "Gothic A1", sans-serif !default;
-$monospace-font    : "Inconsolata", monospace !default;
+$link-color   : $havelock-blue !default;
 
 /*-- scss:rules --*/
 
-.warning {
-  color: $warning;
-}
-.info {
-  color: $info;
-}
-.danger {
-  color: $danger;
-}
-.success {
-  color: $success;
+// acceptable rem values with 1 rem = 16 px
+// 0.25, 0.5, 0.75, 1, 1.5, 2, 4, 6, 8, 12, 16, 24, 32, 40, 48
+
+ body, p {
+  font-family: $font-family-sans-serif;
+  color: $dark-shade;
 }
 
+p {
+  line-height: calc(150% + (0.0025vw * (100 - 30))); /* calculate line height */
+}
 
-body {
-    font-size: 1rem;
-  }
-  
-  p {
-    font-family: $font-family;
-    font-weight: 400;
-    letter-spacing: -0.002em;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%; /* Adjust this value as needed */
-  }
-  
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-
-.reveal .slide {
-  background-color: $bg-color;
-  color: $baltic-sea;
-  font-family: "Lato", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  color: inherit, $dark-shade;
+}
 
-  &.invert {
-    color: $alabaster;
-    background-color: $baltic-sea;
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
-  color: $primary;
+.date {
+  color: $default;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-  font-family: $heading-font;
-  font-weight: 400;
-  font-size: 2em;
-  text-transform: lowercase;
-  color: $primary;
-  word-spacing: 0.1em;
+
+// callouts
+
+.callout-info {
+  border-left-color: $info;
 }
 
-.emphasis {
-  font-weight: 900;
-  color: $info;
+.callout-warning {
+  border-left-color: $warning;
+
+}
+.callout-danger {
+  border-left-color: $danger;
 }
 
-/* Define the card styles */
-.card {
-  display: inline-block;
+.callout-tip{
+  border-left-color: $success;
+}
+
+// sidebar TOC
+
+#TOC {
+ color: $default;
+}
+
+// responsive iframe
+.container {
   position: relative;
   width: 100%;
-  margin-bottom: 30px;
-  padding-right: 0.5em;
-  border-radius: 6px;
-  color: inherit;
-  background: inherit;
-  background-color: inherit;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-
-  &.fill-primary {
-    color: $alabaster;
-    background-color: $primary;
-  }
-
-  &.fill-dark-accent {
-    color: $alabaster;
-    background-color: $dark-accent;
-  }
-
-  &.fill-light-accent {
-    color: $alabaster;
-    background-color: $light-accent;
-  }
-
-  &.fill-dark {
-    color: $alabaster;
-    background-color: $info;
-  }
+  padding-bottom: 5%;
 }
+
+.responsive-iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+
+.quarto-title-meta-heading {
+  color: $default;
+}
+
+// revealjs
+
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: 800;
+  text-transform: lowercase;
+  color: inherit, $dark-shade;
+}
+
+
+.reveal .slide-menu-button {
+    color: red;
+  }  
+
+.slide-cite {
+  color: $default;
+  font-size: 1rem;
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  }
+
+.reveal img{
+  border-radius: 10px;
+  // round corner of image
+
+}
+// extras
 
 .empty {
   color: inherit;

@@ -18,8 +18,7 @@ If you are interested in contributing, you can find more information [here](http
 ::::
 ****
 
-# for organizations
-
+# for organizations 
 Building and improving organizations is tough, especially if resources are limited.
 For almost ten years, I have worked in and for organizations on topics ranging from improving daily operations to long term strategy.
 
@@ -32,3 +31,17 @@ If you are a non-profit, student, social or other type of organization that trie
 I have talked to various classes of high school students about economic history, innovation and sustainability.
 
 If you are a teacher or student and would like to have a chat, you are very welcome to reach out!
+
+
+::: {.callout-warning}
+aöklsjdf
+:::
+
+::: {.callout .callout-note}
+
+askldjfskafdj
+:::
+
+:::{.callout-info}
+ashjdkfh
+::::
