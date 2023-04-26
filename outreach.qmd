@@ -33,15 +33,3 @@ I have talked to various classes of high school students about economic history,
 If you are a teacher or student and would like to have a chat, you are very welcome to reach out!
 
 
-::: {.callout-warning}
-aöklsjdf
-:::
-
-::: {.callout .callout-note}
-
-askldjfskafdj
-:::
-
-:::{.callout-info}
-ashjdkfh
-::::
