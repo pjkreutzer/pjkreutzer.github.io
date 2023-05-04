@@ -16,12 +16,12 @@ website:
 
 
     twitter-card:
-      creator: "@pj_kreutzer"
+      creator: "@pjkreutzer"
 
 format:
   html:
     theme: [litera, me.scss]
-    toc: true
+    toc: false
 
 
 
