@@ -2,6 +2,11 @@
 pagetitle: teaching
 ---
 
+# 2023
+
+I taught a seminar and a lecture in the Bachelor's course Economy and Society: Global Sustainability.
+You can find the material on the [course page](https://pjkreutzer.github.io/eose10vt23). 
+
 # 2022
 
 *** 
@@ -9,4 +14,4 @@ pagetitle: teaching
 ## innovation for sustainability
 
 I taught two courses and two seminars in the  Master's course Innovation for Sustainability.
-You can find all material for the course on the **[course page](https://pjkreutzer.github.io/teaching-innovation-sustainability)**.
+You can find all material for the course 
