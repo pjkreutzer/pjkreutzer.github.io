@@ -12,8 +12,9 @@ website:
 ::: 
 
 :::{.column width="75%"} 
-Together with other PhD students at Lund University, I am organizing a workshop to bridge social sciences with social activists.
-If you are interested in contributing, you can find more information [here](https://pjkreutzer.github.io/social-change-workshop).
+Together with other PhD students at Lund University, I organized a workshop to bridge social sciences with social activists.
+We had a great day of discussions and insightful presentations.
+You can read about the programm [here](https://pjkreutzer.github.io/social-change-workshop).
 :::
 ::::
 ****
