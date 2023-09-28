@@ -1,5 +1,6 @@
 ---
 title: outreach
+pagetitle: "pjk outreach"
 website:
     page-footer: "Workshop graphic designed by [Gregor Molls](https://molls.design)"
 ---

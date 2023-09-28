@@ -1,5 +1,5 @@
 ---
-pagetitle: teaching
+pagetitle: "pjk teaching"
 ---
 
 # 2023
