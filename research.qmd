@@ -1,5 +1,6 @@
 ---
 title: research
+pagetitle: "pjk research"
 ---
 
 My research interest are sustainability transitions.
