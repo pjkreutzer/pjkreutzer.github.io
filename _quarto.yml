@@ -13,6 +13,8 @@ website:
         text: teaching
       - href: outreach.qmd
         text: outreach
+      - href: talks.qmd
+        text: talks
 
 
     twitter-card:
