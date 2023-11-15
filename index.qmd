@@ -12,10 +12,28 @@ about:
             href: https://github.com/pjkreutzer
           - text: "{{< fa envelope >}}"
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
-
+listing:
+    - id: courses
+      contents: "listings/courses.yml"
+      fields: ["title", "year", "term", "level", "description"]
+      field-display-names: 
+        term: Term
+        year: Year
+      sort: "year desc"
+      type: default
+      filter-ui: false
+      sort-ui: false
+    - id: talks
+      contents: "listings/talks.yml"
+      fields: ["title", "date", "event", "location"]
+      field-display-names:
+        event: "Event"
+        location: "Location"
+      sort: "date desc"
 page-layout: full
 toc: false
 ---
+
 :::{#about}
 I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.
 

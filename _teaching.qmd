@@ -1,22 +1,20 @@
 ---
 pagetitle: "pjk teaching"
+title: "Teaching"
+listing:
+    - id: courses
+      contents: "listings/courses.yml"
+      fields: ["title", "term", "level", "description"]
+      field-display-names: 
+        term: "Term"
+      sort: "term desc"
+      type: default
+      filter-ui: false
+      sort-ui: false
 ---
 
-# 2023
 
-## Economics of Innovation
+I teach at a master's and bachelor's level on sustainability and innovation topics at the Department of Economic History, Lund University.
 
-I held two lectures and facilitated two seminars in the Master's course Economics of Innovation.
-
-## Global Sustainability
-
-I taught a seminar and a lecture in the Bachelor's course Economy and Society: Global Sustainability.
-You can find the material on the [course page](https://pjkreutzer.github.io/eose10vt23). 
-
-# 2022
-
-
-## Innovation For Sustainability
-
-I taught two courses and two seminars in the  Master's course Innovation for Sustainability.
-You can find all material for the course on the [course page](https://pjkreutzer.github.io/teaching-innovation-sustainability/).
+:::{#courses}
+:::

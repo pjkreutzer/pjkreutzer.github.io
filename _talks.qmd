@@ -1,7 +1,15 @@
 ---
 pagetitle: "pjk talks"
+title: Talks
+listing:
+    - id: talks
+      contents: "listings/talks.yml"
+      fields: ["title", "date", "event", "location"]
+      field-display-names:
+        event: "Event"
+        location: "Location"
+      sort: "date desc"
 ---
 
-# 2023
-
-[How to organize digital research projects](files/20230929-sehm-digital_projects.html) at Swedish Economic History Meeting, Lund University. 
+:::{#talks}
+:::
