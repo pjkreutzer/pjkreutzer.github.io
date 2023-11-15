@@ -2,7 +2,7 @@
 title: "Philipp Jonas Kreutzer"
 about:
     template: trestles
-    id: about
+    id: about-section
     image: images/PhilippJonasKreutzer.jpg
     image-width: 100%
     links: 
@@ -34,43 +34,12 @@ page-layout: full
 toc: false
 ---
 
-:::{#about}
-I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.
+:::{#about-section}
 
-The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden
-1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).
-
-****
-
-## Education
-
-**Ph.D. in Economic History**
-<br>Lund University, Sweden
-<br>[August 2021 - now]{.date}
-
-**M.Sc. in Innovation and Global Sustainable Development**
-<br>Lund University, Sweden
-<br>[August 2019 - June 2021]{.date}
-
-**B.Sc. in Business Psychology**
-<br>University of Applied Sciences Europe Iserlohn, Germany
-<br>[2015 - 2019]{.date}
-
-## Work experience
-
-**Innovation Management Working Student**
-<br>Innoloft
-<br>[2019 - 2020]{.date}
-
-**Business Development Intern**
-<br>Bridgefy
-<br>[March 2018 - April 2018]{.date}
-
-**HR Development, Training and Internal Communication Intern**
-<br>Lufthansa
-<br>[February 2017 - August 2017]{.date} </p>
+{{< include _about.qmd >}}
 
 :::
+
 
 ## Research
 {{< include _research.qmd >}}
@@ -81,9 +50,9 @@ The project is supervised by Josef Taalbi and Astrid Kander and is embedded in t
 :::{#courses}
 :::
 
-
 ## Outreach
 {{< include _outreach.qmd >}}
+
 
 ## Talks
 :::{#talks}
