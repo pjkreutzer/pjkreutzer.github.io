@@ -21,8 +21,7 @@ website:
       creator: "@pjkreutzer"
 
 format:
-  html:
-    theme: [litera, me.scss]
+  pjk_theme-html: 
     toc: false
 
 
