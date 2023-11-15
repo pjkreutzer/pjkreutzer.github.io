@@ -58,8 +58,3 @@ toc: false
 :::{#talks}
 :::
 
-## Contact
-
-:::{.btn .btn-primary}
-[ {{< fa envelop >}} send me a mail](mailto:philipp_jonas.kreutzer@ekh.lu.se)
-:::
