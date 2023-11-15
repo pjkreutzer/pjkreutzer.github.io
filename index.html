@@ -25,11 +25,9 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,12 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,7 +51,66 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-courses .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-term','listing-level','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-code","listing-year","listing-term","listing-level","listing-description","listing-path"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-courses'] = new List('listing-courses', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-event','listing-location',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-date","listing-location","listing-event","listing-path"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -74,27 +125,26 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Philipp Jonas Kreutzer</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">research</span></a>
+    <a class="nav-link" href="./index.html#research" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html" rel="" target="">
- <span class="menu-text">teaching</span></a>
+    <a class="nav-link" href="./index.html#teaching" rel="" target="">
+ <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./outreach.html" rel="" target="">
- <span class="menu-text">outreach</span></a>
+    <a class="nav-link" href="./index.html#outreach" rel="" target="">
+ <span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html" rel="" target="">
- <span class="menu-text">talks</span></a>
+    <a class="nav-link" href="./index.html#talks" rel="" target="">
+ <span class="menu-text">Talks</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -109,10 +159,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+
+
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
     <img src="images/PhilippJonasKreutzer.jpg" class="about-image
-  rounded " style="width: 20em;">
+  rounded " style="width: 100%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Philipp Jonas Kreutzer</h1>
@@ -134,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
   </a>
 </div>
   </div>
-  <div class="about-contents"><main class="content column-page" id="quarto-document-content">
+  <div class="about-contents"><div id="about-section">
 <p>I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.</p>
 <p>The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden 1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).</p>
 <hr>
@@ -146,16 +200,214 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="work-experience" class="level2">
 <h2 data-anchor-id="work-experience">Work experience</h2>
-<p><strong>Innovation Management Working Student</strong> <br>Innoloft <br><span class="date">2019 - 2020</span></p>
+<p><strong>Innovation Management Working Student</strong> <br>Innoloft <br><span class="date">April 2019 - February 2020</span></p>
 <p><strong>Business Development Intern</strong> <br>Bridgefy <br><span class="date">March 2018 - April 2018</span></p>
 <strong>HR Development, Training and Internal Communication Intern</strong> <br>Lufthansa <br><span class="date">February 2017 - August 2017</span>
 <p></p>
+</section>
+</div></div>
+</div>
+
+<section id="research" class="level2">
+<h2 data-anchor-id="research">Research</h2>
+<p>My research interest are sustainability transitions. In my PhD project, I investigate the directionality of transitioning to bioeconomies.</p>
+<p>The Swedish forestry sector makes for a great case study, as it is at the national and internationaly forefront of transitions to a bioeconomy. I use <a href="https://www.lusem.lu.se/economic-history/databases/swinno">SWINNO</a> data to understand which vision of a bioeconomy (technological, resource, or ecology) the forest sector worked towards from 1970 onward.</p>
+<p>Together with an evaluation of the effects of these significant innovations, the first part of my thesis therefore analyzes which shade of green the bioeconomy transition takes on.</p>
+<p>In the second part of my thesis, I dig deeper into the innovation system of the forest sector. By analyzing the networks of innovators within the sector, I research how exactly the transition to a bioeconomy spreads and if technological lock-ins to any single vision exist.</p>
+<p>Want to know more about my research plans? Have a look at my <a href="files/221014-research-plan.pdf">research plan</a>.</p>
+<div class="container">
+<p><iframe class="responsive-iframe" src="files/221014-research-plan.pdf"></iframe></p>
+</div>
+</section>
+<section id="teaching" class="level2">
+<h2 data-anchor-id="teaching">Teaching</h2>
+<p>I teach at a master’s and bachelor’s level on sustainability and innovation topics at the Department of Economic History, Lund University.</p>
+<div id="listing-courses" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0">
+<div class="body">
+<a href="">
+<h3 class="no-anchor listing-title">
+Economics of Innovation
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>I held two lectures and two seminars on measuring innovation and directionality of innovation systems.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="">
+<div class="metadata-value listing-year">
+2023
+</div>
+<div class="metadata-value listing-term">
+Fall
+</div>
+<div class="metadata-value listing-level">
+Master
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1">
+<div class="body">
+<a href="https://pjkreutzer.github.io/eose10vt23">
+<h3 class="no-anchor listing-title">
+Global Sustainability
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>I held one lecture and one seminars on causes and consequences of climate change and mitigation options.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="https://pjkreutzer.github.io/eose10vt23">
+<div class="metadata-value listing-year">
+2023
+</div>
+<div class="metadata-value listing-term">
+Spring
+</div>
+<div class="metadata-value listing-level">
+Bachelor
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2">
+<div class="body">
+<a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/">
+<h3 class="no-anchor listing-title">
+Innovation for Sustainability
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>I held two lectures and two seminars on sustainability foundations and innovation for sustainability.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/">
+<div class="metadata-value listing-year">
+2022
+</div>
+<div class="metadata-value listing-term">
+Fall
+</div>
+<div class="metadata-value listing-level">
+Master
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div id="courses">
+
+</div>
+</section>
+<section id="outreach" class="level2">
+<h2 data-anchor-id="outreach">Outreach</h2>
+<section id="for-researchers" class="level3">
+<h3 data-anchor-id="for-researchers">For Researchers</h3>
+<div class="columns">
+<div class="column" style="width:25%;">
+<p><img src="images/socialchangeworkshop_instagrampost_1080x1080.png" class="img-fluid" style="padding-right:10px;" alt="A design reading Social Change Workshop 06/05/23 Lund University Sol Auditorium 09:00-15:00"></p>
+</div><div class="column" style="width:75%;">
+<p>Together with other PhD students at Lund University, I organized a workshop to bridge social sciences with social activists. We had a great day of discussions and insightful presentations. You can read about the programm <a href="https://pjkreutzer.github.io/social-change-workshop">here</a>.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="for-organizations" class="level3">
+<h3 data-anchor-id="for-organizations">For Organizations</h3>
+<p>Building and improving organizations is tough, especially if resources are limited. For almost ten years, I have worked in and for organizations on topics ranging from improving daily operations to long term strategy.</p>
+<p>If you are a non-profit, student, social or other type of organization that tries to contribute to a better society, please feel free to get in touch!</p>
+<hr>
+</section>
+<section id="for-schools" class="level3">
+<h3 data-anchor-id="for-schools">For Schools</h3>
+<p>I have talked to various classes of high school students about economic history, innovation and sustainability.</p>
+<p>If you are a teacher or student and would like to have a chat, you are very welcome to reach out!</p>
+</section>
+</section>
+<section id="talks" class="level2">
+<h2 data-anchor-id="talks">Talks</h2>
+<div id="listing-talks" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1695765600000">
+<div class="body">
+<a href="./files/20230929-sehm-digital_projects.html#/title-slide">
+<h3 class="no-anchor listing-title">
+How to Organize Digital Research Projects
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./files/20230929-sehm-digital_projects.html#/title-slide">
+<div class="listing-date">
+Sep 27, 2023
+</div>
+<div class="metadata-value listing-event">
+Swedish Economic History Meeting
+</div>
+<div class="metadata-value listing-location">
+Lund, Sweden
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1685484000000">
+<div class="body">
+<a href="">
+<h3 class="no-anchor listing-title">
+Managing Innovation Systems for Sustainability
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="">
+<div class="listing-date">
+May 31, 2023
+</div>
+<div class="metadata-value listing-event">
+Workshop LU Innovation Energimyndigheten
+</div>
+<div class="metadata-value listing-location">
+Lund, Sweden
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
 
 
 </section>
-</main></div>
-</div>
- <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
