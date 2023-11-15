@@ -1,6 +1,5 @@
 ---
 pagetitle: "pjk talks"
-title: Talks
 listing:
     - id: talks
       contents: "listings/talks.yml"

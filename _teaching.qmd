@@ -1,6 +1,5 @@
 ---
 pagetitle: "pjk teaching"
-title: "Teaching"
 listing:
     - id: courses
       contents: "listings/courses.yml"
