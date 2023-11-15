@@ -88,3 +88,9 @@ The project is supervised by Josef Taalbi and Astrid Kander and is embedded in t
 ## Talks
 :::{#talks}
 :::
+
+## Contact
+
+:::{.btn .btn-primary}
+[ {{< fa envelop >}} send me a mail](mailto:philipp_jonas.kreutzer@ekh.lu.se)
+:::
