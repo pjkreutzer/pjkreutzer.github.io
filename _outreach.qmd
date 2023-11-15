@@ -1,11 +1,10 @@
 ---
-title: outreach
 pagetitle: "pjk outreach"
 website:
     page-footer: "Workshop graphic designed by [Gregor Molls](https://molls.design)"
 ---
 
-# for researchers
+### For Researchers
 
 ::::{.columns}
 :::{.column width="25%"}
@@ -18,9 +17,10 @@ We had a great day of discussions and insightful presentations.
 You can read about the programm [here](https://pjkreutzer.github.io/social-change-workshop).
 :::
 ::::
+
 ****
 
-# for organizations 
+### For Organizations 
 Building and improving organizations is tough, especially if resources are limited.
 For almost ten years, I have worked in and for organizations on topics ranging from improving daily operations to long term strategy.
 
@@ -28,7 +28,7 @@ If you are a non-profit, student, social or other type of organization that trie
 
 ****
 
-# for schools
+### For Schools
 
 I have talked to various classes of high school students about economic history, innovation and sustainability.
 

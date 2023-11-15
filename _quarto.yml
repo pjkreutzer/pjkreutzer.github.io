@@ -5,16 +5,18 @@ project:
 
 website:
   title: "Philipp Jonas Kreutzer"
+  back-to-top-navigation: true
+  search: false
   navbar:
     right:
-      - href: research.qmd
-        text: research
-      - href: teaching.qmd
-        text: teaching
-      - href: outreach.qmd
-        text: outreach
-      - href: talks.qmd
-        text: talks
+      - href: index.qmd#research
+        text: Research
+      - href: index.qmd#teaching
+        text: Teaching
+      - href: index.qmd#outreach
+        text: Outreach
+      - href: index.qmd#talks
+        text: Talks
 
 
     twitter-card:

@@ -1,0 +1,14 @@
+---
+pagetitle: "pjk talks"
+listing:
+    - id: talks
+      contents: "listings/talks.yml"
+      fields: ["title", "date", "event", "location"]
+      field-display-names:
+        event: "Event"
+        location: "Location"
+      sort: "date desc"
+---
+
+:::{#talks}
+:::

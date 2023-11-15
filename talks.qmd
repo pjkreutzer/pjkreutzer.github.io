@@ -1,7 +1,0 @@
----
-pagetitle: "pjk talks"
----
-
-# 2023
-
-[How to organize digital research projects](files/20230929-sehm-digital_projects.html) at Swedish Economic History Meeting, Lund University. 

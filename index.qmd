@@ -2,7 +2,9 @@
 title: "Philipp Jonas Kreutzer"
 about:
     template: trestles
+    id: about-section
     image: images/PhilippJonasKreutzer.jpg
+    image-width: 100%
     links: 
           - icon: twitter
             href: https://twitter.com/pjkreutzer
@@ -10,42 +12,54 @@ about:
             href: https://github.com/pjkreutzer
           - text: "{{< fa envelope >}}"
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
-
+listing:
+    - id: courses
+      contents: "listings/courses.yml"
+      fields: ["title", "year", "term", "level", "description"]
+      field-display-names: 
+        term: Term
+        year: Year
+      sort: "year desc"
+      type: default
+      filter-ui: false
+      sort-ui: false
+    - id: talks
+      contents: "listings/talks.yml"
+      fields: ["title", "date", "event", "location"]
+      field-display-names:
+        event: "Event"
+        location: "Location"
+      sort: "date desc"
 page-layout: full
 toc: false
 ---
 
-I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.
+:::{#about-section}
 
-The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden
-1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).
+{{< include _about.qmd >}}
 
-***
+:::
 
-## Education
 
-**Ph.D. in Economic History**
-<br>Lund University, Sweden
-<br>[August 2021 - now]{.date}
+## Research
+{{< include _research.qmd >}}
 
-**M.Sc. in Innovation and Global Sustainable Development**
-<br>Lund University, Sweden
-<br>[August 2019 - June 2021]{.date}
+## Teaching
+{{< include _teaching.qmd >}}
 
-**B.Sc. in Business Psychology**
-<br>University of Applied Sciences Europe Iserlohn, Germany
-<br>[2015 - 2019]{.date}
+:::{#courses}
+:::
 
-## Work experience
+## Outreach
+{{< include _outreach.qmd >}}
 
-**Innovation Management Working Student**
-<br>Innoloft
-<br>[2019 - 2020]{.date}
 
-**Business Development Intern**
-<br>Bridgefy
-<br>[March 2018 - April 2018]{.date}
+## Talks
+:::{#talks}
+:::
 
-**HR Development, Training and Internal Communication Intern**
-<br>Lufthansa
-<br>[February 2017 - August 2017]{.date} </p>
+## Contact
+
+:::{.btn .btn-primary}
+[ {{< fa envelop >}} send me a mail](mailto:philipp_jonas.kreutzer@ekh.lu.se)
+:::

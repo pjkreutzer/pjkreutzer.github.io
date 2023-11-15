@@ -1,0 +1,19 @@
+---
+pagetitle: "pjk teaching"
+listing:
+    - id: courses
+      contents: "listings/courses.yml"
+      fields: ["title", "term", "level", "description"]
+      field-display-names: 
+        term: "Term"
+      sort: "term desc"
+      type: default
+      filter-ui: false
+      sort-ui: false
+---
+
+
+I teach at a master's and bachelor's level on sustainability and innovation topics at the Department of Economic History, Lund University.
+
+:::{#courses}
+:::
