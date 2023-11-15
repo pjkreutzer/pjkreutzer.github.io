@@ -78,9 +78,13 @@ The project is supervised by Josef Taalbi and Astrid Kander and is embedded in t
 ## Teaching
 {{< include _teaching.qmd >}}
 
+:::{#courses}
+:::
+
 
 ## Outreach
 {{< include _outreach.qmd >}}
 
 ## Talks
-{{< include _talks.qmd >}}
+:::{#talks}
+:::
