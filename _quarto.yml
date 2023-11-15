@@ -10,13 +10,13 @@ website:
   navbar:
     right:
       - href: index.qmd#research
-        text: research
+        text: Research
       - href: index.qmd#teaching
-        text: teaching
+        text: Teaching
       - href: index.qmd#outreach
-        text: outreach
+        text: Outreach
       - href: index.qmd#talks
-        text: talks
+        text: Talks
 
 
     twitter-card:
