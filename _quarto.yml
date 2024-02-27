@@ -25,6 +25,10 @@ website:
 format:
   pjk_theme-html: 
     toc: false
+        include-in-header: 
+          - text: |
+              <script data-goatcounter="https://pjkreutzer.goatcounter.com/count"
+              async src="//gc.zgo.at/count.js"></script>
 
 
 
