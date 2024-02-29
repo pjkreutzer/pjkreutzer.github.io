@@ -10,7 +10,7 @@ about:
             href: https://twitter.com/pjkreutzer
           - icon: github
             href: https://github.com/pjkreutzer
-          - text: "{{< fa envelope >}}"
+          - text: '{{< fa envelope >}}'
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 listing:
     - id: courses
