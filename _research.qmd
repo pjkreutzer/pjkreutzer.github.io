@@ -5,7 +5,7 @@ pagetitle: "pjk research"
 My research interest are sustainability transitions.
 In my PhD project, I investigate the directionality of transitioning to bioeconomies.
 
-The Swedish forestry sector makes for a great case study, as it is at the national and internationaly forefront of transitions to a bioeconomy.
+The Swedish forestry sector makes for a great case study, as it is at the national and international forefront of transitions to a bioeconomy.
 I use [SWINNO](https://www.lusem.lu.se/economic-history/databases/swinno) data to understand which vision of a bioeconomy (technological, resource, or ecology) the forest sector worked towards from 1970 onward.
 
 Together with an evaluation of the effects of these significant innovations, the first part of my thesis therefore analyzes which shade of green the bioeconomy transition takes on.
