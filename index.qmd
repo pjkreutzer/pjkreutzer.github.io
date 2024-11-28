@@ -1,5 +1,6 @@
 ---
 title: "Philipp Jonas Kreutzer"
+pagetitle: PJK
 about:
     template: trestles
     id: about-section
@@ -13,25 +14,33 @@ about:
           - text: '{{< fa envelope >}}'
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 listing:
-    - id: courses
-      contents: "listings/courses.yml"
-      fields: ["title", "year", "term", "level", "description"]
-      field-display-names: 
-        term: Term
-        year: Year
-      sort: "year desc"
-      type: default
-      filter-ui: false
-      sort-ui: false
-    - id: talks
-      contents: "listings/talks.yml"
-      fields: ["title", "date", "event", "location"]
-      field-display-names:
-        event: "Event"
-        location: "Location"
-      sort: "date desc"
+  - id: courses
+    contents: "listings/courses.yml"
+    fields: ["title", "year", "term", "level", "description"]
+    field-display-names: 
+      term: Term
+      year: Year
+    sort: "year desc"
+    type: default
+    filter-ui: false
+    sort-ui: false
+
+  - id: talks
+    contents: "listings/talks.yml"
+    fields: ["title", "date", "event", "location"]
+    field-display-names:
+      event: "Event"
+      location: "Location"
+    sort: "date desc"
+    type: default
+    filter-ui: false
+    sort-ui: false
+  
 page-layout: full
 toc: false
+execute:
+  warning: true
+  error: true
 ---
 
 :::{#about-section}
@@ -40,21 +49,17 @@ toc: false
 
 :::
 
-
 ## Research
 {{< include _research.qmd >}}
 
 ## Teaching
 {{< include _teaching.qmd >}}
 
-:::{#courses}
-:::
-
 ## Outreach
 {{< include _outreach.qmd >}}
 
 
 ## Talks
-:::{#talks}
-:::
+
+{{< include _talks.qmd >}}
 

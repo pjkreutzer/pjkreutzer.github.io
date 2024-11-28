@@ -1,5 +1,4 @@
 ---
-pagetitle: "pjk about"
 title: "Philipp Jonas Kreutzer"
 about:
     template: trestles
@@ -37,6 +36,10 @@ The project is supervised by Josef Taalbi and Astrid Kander and is embedded in t
 <br>[2015 - 2019]{.date}
 
 ## Work experience
+
+**Climate Finance Unit Intern**
+<br> UNEP
+<br>[February 2024 - April 2024]{.date}
 
 **Innovation Management Working Student**
 <br>Innoloft

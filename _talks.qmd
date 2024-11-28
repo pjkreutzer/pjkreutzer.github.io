@@ -1,7 +1,7 @@
 ---
-pagetitle: "pjk talks"
 listing:
-    - id: talks
+    - id: talk
+      type: default
       contents: "listings/talks.yml"
       fields: ["title", "date", "event", "location"]
       field-display-names:

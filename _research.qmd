@@ -1,7 +1,3 @@
----
-pagetitle: "pjk research"
----
-
 My research interest are sustainability transitions.
 In my PhD project, I investigate the directionality of transitioning to bioeconomies.
 
