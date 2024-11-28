@@ -2,7 +2,7 @@
 listing:
     - id: talk
       type: default
-      contents: "listings/talks.yml"
+      contents: "talks.yml"
       fields: ["title", "date", "event", "location"]
       field-display-names:
         event: "Event"

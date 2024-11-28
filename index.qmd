@@ -15,7 +15,7 @@ about:
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 listing:
   - id: courses
-    contents: "listings/courses.yml"
+    contents: "courses.yml"
     fields: ["title", "year", "term", "level", "description"]
     field-display-names: 
       term: Term
@@ -26,7 +26,7 @@ listing:
     sort-ui: false
 
   - id: talks
-    contents: "listings/talks.yml"
+    contents: "talks.yml"
     fields: ["title", "date", "event", "location"]
     field-display-names:
       event: "Event"
@@ -50,16 +50,26 @@ execute:
 :::
 
 ## Research
+
 {{< include _research.qmd >}}
 
 ## Teaching
-{{< include _teaching.qmd >}}
+
+I teach at a master's and bachelor's level on sustainability and innovation topics at the Department of Economic History, Lund University.
+
+To help students and practitioners gain a deeper understanding of innovation systems, I have designed a teaching game to simulate an innovation system.
+Participants allocate resources, negotiate research goals and discover innovations, while balancing collective and individual goals.
+It is available for free and open source: [Innovation Systems for Sustainability](https://pjkreutzer.github.io/innovation-systems-game/).
+
+:::{#courses}
+:::
 
 ## Outreach
-{{< include _outreach.qmd >}}
 
+{{< include _outreach.qmd >}}
 
 ## Talks
 
-{{< include _talks.qmd >}}
 
+:::{#talks}
+::::

@@ -1,7 +1,7 @@
 ---
 listing:
     - id: courses
-      contents: "listings/courses.yml"
+      contents: "courses.yml"
       fields: ["title", "term", "level", "description"]
       field-display-names: 
         term: "Term"
