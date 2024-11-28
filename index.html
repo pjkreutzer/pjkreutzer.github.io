@@ -56,7 +56,35 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talk .list');
+    const listingTargetEl = window.document.querySelector('#listing-courses .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-term','listing-level','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-code","listing-year","listing-term","listing-level","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-courses'] = new List('listing-courses', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -69,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talk'] = new List('listing-talk', options);
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -226,9 +254,91 @@ window.Quarto = {
 <section id="teaching" class="level2">
 <h2 data-anchor-id="teaching">Teaching</h2>
 <p>I teach at a master’s and bachelor’s level on sustainability and innovation topics at the Department of Economic History, Lund University.</p>
-<p>To help students and practicionairs gain a deeper understanding of innovation systems, I have designed a teaching game to simulate an innovation systems. Participants need to allocate resources, negotiate research goals and discover innovations, while balancing collective and individual goals. It is available for free and open source: <a href="https://pjkreutzer.github.io/innovation-systems-game/">Innovation Systems for Sustainability</a>.</p>
-<div id="courses">
-
+<p>To help students and practitioners gain a deeper understanding of innovation systems, I have designed a teaching game to simulate an innovation system. Participants allocate resources, negotiate research goals and discover innovations, while balancing collective and individual goals. It is available for free and open source: <a href="https://pjkreutzer.github.io/innovation-systems-game/">Innovation Systems for Sustainability</a>.</p>
+<div id="listing-courses" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://pjkreutzer.github.io/eose10" class="no-external">Global Sustainability</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://pjkreutzer.github.io/eose10" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://pjkreutzer.github.io/eose10" class="no-external">I hold one lecture and one seminar on causes and consequences of climate change and mitigation options. </a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="https://pjkreutzer.github.io/eose10" class="no-external"></a></p><a href="https://pjkreutzer.github.io/eose10" class="no-external">
+<div class="metadata-value listing-year">
+2024
+</div>
+<div class="metadata-value listing-term">
+Spring
+</div>
+<div class="metadata-value listing-level">
+Bachelor
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="" class="no-external">Economics of Innovation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="" class="no-external">I hold lectures and seminars on measuring innovation and directionality of innovation systems. </a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="" class="no-external"></a></p><a href="" class="no-external">
+<div class="metadata-value listing-year">
+2023
+</div>
+<div class="metadata-value listing-term">
+Fall
+</div>
+<div class="metadata-value listing-level">
+Master
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/" class="no-external">Innovation for Sustainability</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/" class="no-external">I hold lectures and seminars on sustainability foundations and innovation for sustainability. </a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/" class="no-external"></a></p><a href="https://pjkreutzer.github.io/teaching-innovation-sustainability/" class="no-external">
+<div class="metadata-value listing-year">
+2022
+</div>
+<div class="metadata-value listing-term">
+Fall
+</div>
+<div class="metadata-value listing-level">
+Master
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 </section>
 <section id="outreach" class="level2">
@@ -258,16 +368,7 @@ window.Quarto = {
 </section>
 <section id="talks" class="level2">
 <h2 data-anchor-id="talks">Talks</h2>
-<div id="talks">
-
-</div>
-
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-talk">
+<div id="listing-talks" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-listing-date-sort="1728424800000">
 <div class="body">
@@ -411,7 +512,14 @@ Lund, Sweden
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
