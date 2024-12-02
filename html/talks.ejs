@@ -1,0 +1,50 @@
+```{=html}
+
+<div class="talks">
+    <% for (const talk of items) { %>
+        <div class="talk-entry">
+            <div class="metadata">
+                <p class="date-location">
+                    <%= talk.date %> | <%= talk.location %>
+                </p>
+            </div>
+            <div class="body">
+                <p class="title">
+                    <%= talk.title %>
+                        <% if (talk.links) { %>
+                            <span class="talk-links">
+                                <% for (const link of talk.links) { %>
+                                    <span class="talk-link">
+                                        <% if (link.local) { %>
+                                            <a
+                                                href="<%- talk.path.substring(0, talk.path.lastIndexOf('/')) %>/<%- link.url %>">
+                                                <% } else { %>
+                                                    <a href="<%- link.url %>">
+                                                        <% } %>
+                                                            <i class="<%- link.icon %>"></i>
+                                                            <%= link.name %>
+                                                    </a>
+                                    </span>
+                                    <% } %>
+                            </span>
+                            <% } %>
+                </p>
+                <p class="description">
+                    <%= talk.description %>
+                </p>
+                <!-- <p class="categories">
+                    <% if (talk.categories) { %>
+                        Category:
+                        <% for (const category of talk.categories) { %>
+                            <span class="category">
+                                <%= category %>
+                            </span>
+                            <% } %>
+                                <% } %>
+                </p> -->
+            </div>
+            <hr>
+        </div>
+        <% } %>
+</div>
+```

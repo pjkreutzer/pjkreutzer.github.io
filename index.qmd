@@ -22,19 +22,20 @@ listing:
       year: Year
     sort: "year desc"
     type: default
-    filter-ui: false
     sort-ui: false
 
   - id: talks
-    contents: "talks.yml"
+    contents:
+      - talks/2024.yml
+      - talks/2023.yml
     fields: ["title", "date", "event", "location"]
     field-display-names:
       event: "Event"
       location: "Location"
     sort: "date desc"
-    type: default
-    filter-ui: false
-    sort-ui: false
+    template: html/talks.ejs
+
+    
   
 page-layout: full
 toc: false
@@ -69,7 +70,6 @@ It is available for free and open source: [Innovation Systems for Sustainability
 {{< include _outreach.qmd >}}
 
 ## Talks
-
 
 :::{#talks}
 ::::
