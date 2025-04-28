@@ -7,8 +7,6 @@ about:
     image: images/PhilippJonasKreutzer.jpg
     image-width: 100%
     links: 
-          - icon: twitter
-            href: https://twitter.com/pjkreutzer
           - icon: github
             href: https://github.com/pjkreutzer
           - text: '{{< fa envelope >}}'
@@ -26,6 +24,7 @@ listing:
 
   - id: talks
     contents:
+      - talks/2025.yml
       - talks/2024.yml
       - talks/2023.yml
     fields: ["title", "date", "event", "location"]
