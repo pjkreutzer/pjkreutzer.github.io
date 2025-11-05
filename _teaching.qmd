@@ -2,7 +2,7 @@
 listing:
     - id: courses
       contents: "courses.yml"
-      fields: ["title", "term", "level", "description"]
+      fields: ["title", "level", "description"]
       field-display-names: 
         term: "Term"
       sort: "term desc"
