@@ -1,11 +1,38 @@
+- title: "Collaboration for the Bioeconomy"
+  date: 2025-07-29
+  location: Lund, Sweden
+  event: "World Economic History Congress 2025"
+  links:
+  - name: Slides
+    url: https://pjkreutzer.github.io/files/20250729-WEHC-presentation.html
+  categories:
+  - collaboration networks
+  - research dissemination
+
+- title: "Reproducibility in Economic History Research"
+  date: 2025-07-28
+  location: Lund, Sweden
+  event: "World Economic History Congress 2025"
+  categories:
+  - methods
+  - research dissemination
+
 - title: "Sweden's Forest Bioeconomy: Directionality and Collaboration Patterns"
   date: 2025-04-29
   location: Stockholm, Sweden
+  event: "VINNOVA"
   links:
   - name: Materials
     url: https://pjkreutzer.github.io/files/bioeconomy_network
   categories:
   - policy
+  - research dissemination
+
+- title: "Unpacking Directionality:  How Aligned Are Swedish Innovation with Bioeconomy Visions?"
+  date: 2025-04-09
+  location: Lund, Sweden
+  event: "CIRCLE Research Talk"
+  categories:
   - research dissemination
 
 - title: Teaching with Games
