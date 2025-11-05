@@ -58,6 +58,9 @@ a:hover {
 
 div.quarto-about-trestles .about-entity .about-link:hover {
     color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .date {
@@ -159,6 +162,19 @@ span.category {
     left: 0;
     width: 100%;
     height: 500px;
+}
+
+// callouts
+
+.paper-callout {
+    border: 1px solid $default !important;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: inherit;
+    border-color: $primary;
+    &:hover {
+        border-color: $light-accent;
+    }
 }
 
 // extras
