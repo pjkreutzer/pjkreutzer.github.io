@@ -6,19 +6,13 @@ about:
     id: about-section
     image: images/PhilippJonasKreutzer.jpg
     image-width: 100%
-    links: 
-          - icon: github
-            href: https://github.com/pjkreutzer
-          - text: '{{< fa envelope >}}'
-            href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 listing:
   - id: courses
     contents: "courses.yml"
-    fields: ["title", "year", "term", "level", "description"]
+    fields: ["title", "term", "level", "description"]
     field-display-names: 
       term: Term
-      year: Year
-    sort: "year desc"
+      sort: "year desc"
     type: default
     sort-ui: false
 
@@ -35,7 +29,6 @@ listing:
     template: html/talks.ejs
 
     
-  
 page-layout: full
 toc: false
 execute:
@@ -72,3 +65,4 @@ It is available for free and open source: [Innovation Systems for Sustainability
 
 :::{#talks}
 ::::
+
