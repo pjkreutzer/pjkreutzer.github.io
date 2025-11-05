@@ -1,21 +1,53 @@
-My research interest are sustainability transitions.
-In my PhD project, I investigate the directionality of transitioning to bioeconomies.
+My research interest are sustainability transitions, technological change, and network science.
+In my PhD project, I investigate the bioeconomy transition in Sweden.
 
-The Swedish forestry sector makes for a great case study, as it is at the national and international forefront of transitions to a bioeconomy.
-I use [SWINNO](https://www.lusem.lu.se/economic-history/databases/swinno) data to understand which vision of a bioeconomy (technological, resource, or ecology) the forest sector worked towards from 1970 onward.
+The Swedish forestry sector makes for a great case study, as it is at the national and international forefront of this transition.
+I use [SWINNO](https://www.lusem.lu.se/economic-history/databases/swinno) data to understand trends, drivers and outcomes of innovation in the forest bioeconomy from 1970 onward.
 
-Together with an evaluation of the effects of these significant innovations, the first part of my thesis therefore analyzes which shade of green the bioeconomy transition takes on.
+### Working Papers
 
-In the second part of my thesis, I dig deeper into the innovation system of the forest sector.
-By analyzing the networks of innovators within the sector, I research how exactly the transition to a bioeconomy spreads and if technological lock-ins to any single vision exist.
+::: {.callout .paper-callout collapse="true"}
 
-Want to know more about my research plans?
-Have a look at my [research plan](files/221014-research-plan.pdf).
+# The Strength of the Global sociotechnical Pulp and Paper System and Its Consequences for Forestry Diversification, _Philipp Jonas Kreutzer, Derek Garfield (SLU), Cristián Alarcón Ferrari (SLU)_
 
-:::{.container}
-
-  <iframe class="responsive-iframe" src="files/221014-research-plan.pdf"></iframe>
+**Abstract** Global sociotechnical regimes coordinate production systems across borders through shared rationales. This paper investigates the global pulp and paper regime, to identify its strength and implications for forestry diversification. Based on literature covering the sector from 1800 to today and primary data from Sweden and Chile we identify a strong global sociotechnical regime centered around production rationales and technologies developed by multinational enterprises located in traditional forestry nations. The regime rests on three core logics: capital-intensive bulk processing, technological standardization around chemical pulping, and rationalized forestry emphasizing homogeneous inputs and economies of scale.
+Our analysis shows how these rationales are centered on the success of Global North actors and diffuse through their internationalization.
+These dynamics constrain diversification, as the regime’s reliance on uniform inputs and large-scale processing impedes species heterogeneity and alternative silvicultural approaches. While climate and biodiversity pressures drive sustainability discourse, the regime adapts without altering core logics. We contribute to sociotechnical systems scholarship by showing how technological dependencies sustain regime coherence globally, complicating transitions toward ecologically diverse forestry futures.
 
 :::
 
+::: {.callout .paper-callout collapse="true"}
 
+# 50 Years of Innovation Towards a Swedish Forest-Based Bioeconomy, _Philipp Jonas Kreutzer_
+
+**Abstract** The bioeconomy is expected to replace fossil-based economic systems as a more sustainable system. To transition to a bioeconomy, substantial innovation efforts are required. Policymakers and practitioners require evidence regrading patterns and drivers of bioeconomy innovation beyond expert opinions. This paper studies 50 years of forest bioeconomy innovation in Sweden, a leading forestry nation, to test central claims about the complexity, knowledge base demands, collaboration intensity and life cycle stages of bioeconomy innovation. Data stems from an extensive literature-based innovation output database of 4972 commercialized innovations, from which 653 bioeconomy innovation were identified. The analysis revealed a structural transformation around 1990, marking a shift from a rationalization period (1970-1990) focused on mechanization and process improvements to a diversification period (1990-2021) emphasizing novel bio-based products and alternative biomass applications. During diversification, bioeconomy innovations became associated with broader collaboration networks, while the relationship with public funding reversed from positive to negative. 
+The paper found no empirical support for other commonly assumed characteristics of bioeconomy innovation.
+These include the complexity of the knowledge base, or public funding's role, challenging prevalent assumptions about the fundamentally different nature of bioeconomy innovation.
+The identified innovation patterns align with industrial life-cycle theory, suggesting Swedish forest industries transitioned from an established sector optimizing existing processes to an emerging bioeconomy exploring radical innovations. Results indicate that bioeconomy innovation policy effectiveness depends critically on industrial life-cycle stage, with collaboration-supporting mechanisms becoming more important during diversification phases. 
+
+:::
+
+::: {.callout .paper-callout collapse="true"}
+
+# Collaboration for the Bioeconomy, _Philipp Jonas Kreutzer, Josef Taalbi (LU)_
+
+**Abstract** Collaboration is expected to play a central role in the transition to a bioeconomy -- a central pillar of a green economy.
+Such collaboration is supposed to bridge knowledge between traditional biomass utilizing actors -- such as forestry -- and the diverse actors in fields where biomass ought to substitute existing or create novel products and processes.
+Poisson regression of new panel data created from data of commercialized innovation in Sweden between 1970 and 2021 reveals generally positive associations between direct and indirect ties, brokerage positions, access to knowledge and cognitive proximity and subsequent innovation output.
+These associations are mostly equal between actors heavily invested in the bioeconomy and those focusing on other innovation areas.
+These results suggest that stimulating collaboration could result in higher number of innovations for bioeconomy actors in Sweden.
+
+:::
+
+::: {.callout .paper-callout collapse="true"}
+
+# Consolidating Rather Than Guiding Bioeconomy Visions Center on Existing Technological Trajectories in Swedish Forestry, _Philipp Jonas Kreutzer_
+
+**Abstract**
+The transition to a bioeconomy is high on the agenda for research, industry and policy. Shared visions have been proposed as key tools to provide directionality and guide sustainability transitions. However, visions have been criticized as being sensitive to capture from elites and incumbent actors and little is known between the interplay of vision in discourse and actual innovation outputs.
+Drawing on 627 innovations commercialized between 1970 and 2021 in Sweden's forest-based bioeconomy, this paper shows that innovation preceded the dominance of the bioresource vision by several decades.
+This suggests that visions may emerge to consolidate existing trajectories rather than guide new ones.
+These results challenge the assumed role of visions as instruments of directionality in transition governance. The paper introduces a conceptual distinction between guiding and consolidating visions and argues that, in mature sectors with strong incumbents, visions may legitimize past trajectories rather than steer innovation toward new directions.
+For Sweden's transition to a forest-based bioeconomy this paper finds evidence that commercialized innovation has brought important sustainability improvements, but has largely focused on the mechanical and automatized harvesting and processing of wooden biomass, while neglecting technologies promoting more sustainable forests.
+
+:::
