@@ -186,3 +186,8 @@ span.category {
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
 }
+
+.alert.alert-info {
+    background-color: $primary;
+    color: $dark;
+}

@@ -17,6 +17,12 @@ website:
         text: Outreach
       - href: index.qmd#talks
         text: Talks
+  announcement: 
+    # icon: bell-fill
+    dismissable: true
+    content: "**I will defend my PhD thesis on April 27, 2026**. If you want to attend, please contact me via email."
+    type: info
+    position: below-navbar
 
 
     twitter-card:
