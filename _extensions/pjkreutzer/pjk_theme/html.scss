@@ -40,15 +40,58 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family-sans-serif;
-    font-weight: 400;
-    color: inherit, $dark;
+    font-family: $font-family-headers;
+    font-weight: 600;
+    color: $dark;
     border-bottom: none;
+}
+
+h2 {
+    color: $dark;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1.5px solid $light-accent;
+    display: inline-block;
+}
+
+// sections — alternating backgrounds and spacing
+
+.quarto-about-trestles {
+    margin-bottom: 2rem;
+}
+
+#about-section {
+    .about-entity {
+        .about-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+    }
+}
+
+// fade-in on scroll
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out both;
 }
 
 a {
     position: relative;
     color: inherit;
+    transition: color 0.2s ease;
 }
 
 a:hover {
@@ -56,11 +99,15 @@ a:hover {
     text-decoration: underline;
 }
 
-div.quarto-about-trestles .about-entity .about-link:hover {
-    color: $primary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+div.quarto-about-trestles .about-entity .about-link {
+    transition: color 0.2s ease, transform 0.2s ease;
+    &:hover {
+        color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-1px);
+    }
 }
 
 .date {
@@ -84,7 +131,7 @@ div.quarto-about-trestles .about-entity .about-link:hover {
     font-size: 1rem;
     font-weight: 600;
     color: $dark !important;
-    font: $font-family-sans-serif;
+    font-family: $font-family-sans-serif;
 }
 
 li.talk-link {
@@ -102,18 +149,58 @@ li.talk-link {
 }
 
 span.category {
-    padding-right: 0.25rem; // Add padding inside the box
-    padding-left: 0.25rem; // Add padding inside the box
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
     margin: 0.1rem;
     border: 1px solid $default;
     border-radius: 4px;
     font-size: 0.75rem;
 }
 
+// talks
+.talk-entry {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid map-get($theme-colors, "gray-200");
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    p {
+        margin-bottom: 0.15rem;
+    }
+
+    .title {
+        font-weight: 600;
+    }
+
+    .talk-link a {
+        color: $primary;
+        font-size: 0.85rem;
+        &:hover {
+            color: $dark-accent;
+        }
+    }
+}
+
 // navbar
 
 .navbar {
     background-color: $white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+
+    .navbar-brand {
+        font-family: $font-family-headers;
+        font-weight: 600;
+    }
+
+    .nav-link {
+        font-family: $font-family-headers;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        transition: color 0.2s ease;
+    }
 }
 
 // sidebars
@@ -132,6 +219,7 @@ span.category {
 
 .btn {
     border-radius: 5px;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -142,6 +230,8 @@ span.category {
         background-color: $dark-accent;
         border-color: $dark-accent;
         color: $white;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 }
 .downloadthis:hover {
@@ -164,16 +254,25 @@ span.category {
     height: 500px;
 }
 
-// callouts
+// callouts — working papers
 
 .paper-callout {
-    border: 1px solid $default !important;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    border: 1px solid $light-accent !important;
+    border-left: 4px solid $primary !important;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
     color: inherit;
-    border-color: $primary;
+    border-radius: 4px;
+    background-color: map-get($theme-colors, "royal-blue-50");
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
     &:hover {
-        border-color: $light-accent;
+        border-left-color: $dark-accent !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .callout-header {
+        font-family: $font-family-headers;
     }
 }
 

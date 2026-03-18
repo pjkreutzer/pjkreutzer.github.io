@@ -1,18 +1,25 @@
 ---
-title: "The site you went looking for does not exist."
+title: "Page not found"
 page-layout: full
 ---
 
-Try going back [home](index.qmd), or search for the site from the top-right corner.
+::: {style="text-align: center; padding: 3rem 1rem;"}
+
+The page you went looking for does not exist.
 
 ![Animation by Emmie Wahlström](images/jonas-walk.GIF){.center-cropped}
 
+[Back to Home](index.qmd){.btn .btn-primary style="margin-top: 1.5rem;"}
 
+:::
 
 <style>
     .center-cropped {
-    width: 20%;
-    object-fit: contain;
-    object-position: center;
-  }
+        width: 20%;
+        object-fit: contain;
+        object-position: center;
+        margin: 2rem auto;
+        display: block;
+        border-radius: 8px;
+    }
 </style>
