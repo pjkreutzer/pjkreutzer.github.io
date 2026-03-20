@@ -18,10 +18,7 @@ listing:
 
   - id: talks
     contents:
-      - talks/2026.yml
-      - talks/2025.yml
-      - talks/2024.yml
-      - talks/2023.yml
+      - talks/talks.yml
     fields: ["title", "date", "event", "location"]
     field-display-names:
       event: "Event"

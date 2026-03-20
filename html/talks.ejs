@@ -1,8 +1,27 @@
 ```{=html}
 
+<%
+  const displayConfig = items.find(i => i._display);
+  const allTalks = items.filter(item => {
+    if (item._display) return false;
+    if (item.show === false) return false;
+    return true;
+  });
+
+  function isRecent(talk) {
+    if (!displayConfig) return true;
+    const year = new Date(talk.date).getFullYear();
+    if (displayConfig.since && year < displayConfig.since) return false;
+    if (displayConfig.years && !displayConfig.years.includes(year)) return false;
+    return true;
+  }
+
+  const hasOlder = allTalks.some(t => !isRecent(t));
+%>
+
 <div class="talks">
-    <% for (const talk of items) { %>
-        <div class="talk-entry">
+    <% for (const talk of allTalks) { %>
+        <div class="talk-entry<%= isRecent(talk) ? '' : ' talk-older' %>">
             <div class="metadata">
                 <p class="date-location">
                     <%= talk.date %> | <%= talk.event %>,
@@ -33,18 +52,13 @@
                 <p class="description">
                     <%= talk.description %>
                 </p>
-                <!-- <p class="categories">
-                    <% if (talk.categories) { %>
-                        Category:
-                        <% for (const category of talk.categories) { %>
-                            <span class="category">
-                                <%= category %>
-                            </span>
-                            <% } %>
-                                <% } %>
-                </p> -->
             </div>
         </div>
         <% } %>
+    <% if (hasOlder) { %>
+    <button class="btn btn-outline-primary talks-toggle" onclick="var t = this.parentElement; t.classList.toggle('talks-expanded'); this.textContent = t.classList.contains('talks-expanded') ? 'Show less' : 'Show all talks';">
+        Show all talks
+    </button>
+    <% } %>
 </div>
 ```
