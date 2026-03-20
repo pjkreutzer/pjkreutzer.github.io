@@ -34,10 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c30f8a2a8395b0cf768b2d3296ca5edc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c30f8a2a8395b0cf768b2d3296ca5edc.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6aa1268d7aef3e8f441aa7963bad6b00.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c30f8a2a8395b0cf768b2d3296ca5edc.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cf6450f37502eb0ef6a274db28865683.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-73cfdfef115a3f6039a52669f7520217.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-73cfdfef115a3f6039a52669f7520217.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-73cfdfef115a3f6039a52669f7520217.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -95,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-date','listing-event','listing-location',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-location","listing-event","listing-links","listing-categories"],
+      searchColumns: ["listing-_display","listing-since","listing-title","listing-date","listing-location","listing-event","listing-links","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -444,20 +448,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                pedagogy
-                            </span>
-                            
-                            <span class="category">
-                                serious games
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -476,24 +466,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                bioeconomy
-                            </span>
-                            
-                            <span class="category">
-                                forestry
-                            </span>
-                            
-                            <span class="category">
-                                innovation
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -525,20 +497,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                collaboration networks
-                            </span>
-                            
-                            <span class="category">
-                                research dissemination
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -557,20 +515,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                methods
-                            </span>
-                            
-                            <span class="category">
-                                research dissemination
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -602,20 +546,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                policy
-                            </span>
-                            
-                            <span class="category">
-                                research dissemination
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -634,16 +564,6 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                research dissemination
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
@@ -675,24 +595,10 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                pedagogy
-                            </span>
-                            
-                            <span class="category">
-                                serious games
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     Oct 9, 2024 | 1st Bioeconomy Economics Workshop: Economics &amp; Governance of the Global Bioeconomy,
@@ -720,32 +626,10 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                innovation systems
-                            </span>
-                            
-                            <span class="category">
-                                bioeconomy
-                            </span>
-                            
-                            <span class="category">
-                                sustainabilitycs
-                            </span>
-                            
-                            <span class="category">
-                                research
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     Sep 7, 2024 | 9th NEST Conference,
@@ -760,32 +644,10 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                innovation systems
-                            </span>
-                            
-                            <span class="category">
-                                bioeconomy
-                            </span>
-                            
-                            <span class="category">
-                                sustainability
-                            </span>
-                            
-                            <span class="category">
-                                research
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     Sep 6, 2024 | 9th NEST Conference,
@@ -794,38 +656,16 @@ Master
             </div>
             <div class="body">
                 <p class="title">
-                    Collaboration and Power in Sweden’s Bioeconomy Innovation System
+                    Collaboration and Power in Sweden's Bioeconomy Innovation System
                         
                 </p>
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                innovation systems
-                            </span>
-                            
-                            <span class="category">
-                                bioeconomy
-                            </span>
-                            
-                            <span class="category">
-                                sustainability
-                            </span>
-                            
-                            <span class="category">
-                                research
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     Jun 12, 2024 | Workshop LU Innovation Sustainability Leapfrogs,
@@ -853,28 +693,10 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                innovation systems
-                            </span>
-                            
-                            <span class="category">
-                                sustainability
-                            </span>
-                            
-                            <span class="category">
-                                entrepreneurship
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     Sep 27, 2023 | Swedish Economic History Meeting,
@@ -902,24 +724,10 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                research
-                            </span>
-                            
-                            <span class="category">
-                                project management
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
-        <div class="talk-entry">
+        <div class="talk-entry talk-older">
             <div class="metadata">
                 <p class="date-location">
                     May 31, 2023 | Workshop LU Innovation Energimyndigheten,
@@ -947,27 +755,14 @@ Master
                 <p class="description">
                     
                 </p>
-                <!-- <p class="categories">
-                    
-                        Category:
-                        
-                            <span class="category">
-                                policy
-                            </span>
-                            
-                            <span class="category">
-                                innovation systems
-                            </span>
-                            
-                            <span class="category">
-                                sustainability
-                            </span>
-                            
-                                
-                </p> -->
             </div>
         </div>
         
+    
+    <button class="btn btn-outline-primary talks-toggle" onclick="var t = this.parentElement; t.classList.toggle('talks-expanded'); this.textContent = t.classList.contains('talks-expanded') ? 'Show less' : 'Show all talks';">
+        Show all talks
+    </button>
+    
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
