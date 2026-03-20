@@ -6,5 +6,6 @@ contributes:
   formats:
     revealjs:
       theme: [defaults.scss, revealjs.scss]
+      center: true
     html:
       theme: [litera, defaults.scss, html.scss]
