@@ -1,0 +1,229 @@
+---
+title: "PhD Party"
+format:
+  pjk_theme-html:
+    toc: false
+    navbar: false
+    include-in-header:
+      - text: |
+          <script data-goatcounter="https://pjkreutzer.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Playfair+Display:wght@700;900&display=swap');
+
+            body {
+              background-color: #FDEEEF;
+              margin: 0;
+              padding: 0;
+              min-height: 100vh;
+            }
+
+            #quarto-content {
+              background-color: #FDEEEF;
+            }
+
+            .invite-wrapper {
+              background-color: #FDEEEF;
+              max-width: 550px;
+              margin: 0 auto;
+              padding: 2rem 1.5rem 3rem;
+              position: relative;
+              min-height: 90vh;
+              display: flex;
+              flex-direction: column;
+            }
+
+            /* Top title: PhDs */
+            .top-title {
+              font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+              font-weight: 900;
+              font-size: clamp(5rem, 18vw, 9rem);
+              line-height: 0.85;
+              color: #1a1a2e;
+              margin: 0;
+              padding: 0;
+              z-index: 2;
+              position: relative;
+            }
+
+            /* Photo container */
+            .photo-container {
+              position: relative;
+              margin-top: -4.5rem;
+              z-index: 1;
+              width: 100%;
+            }
+
+            .photo-container img {
+              width: 100%;
+              height: auto;
+              display: block;
+            }
+
+            .photo-placeholder {
+              width: 100%;
+              aspect-ratio: 3 / 4;
+              background-color: #d4cfa0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #8a8560;
+              font-family: sans-serif;
+              font-size: 0.9rem;
+              letter-spacing: 0.05em;
+            }
+
+            /* Right vertical text: First Floor */
+            .side-title {
+              font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+              font-weight: 900;
+              font-size: clamp(3.5rem, 12vw, 6.5rem);
+              line-height: 0.85;
+              color: #1a1a2e;
+              writing-mode: vertical-rl;
+              text-orientation: mixed;
+              position: absolute;
+              right: -2rem;
+              top: 8rem;
+              z-index: 2;
+              margin: 0;
+              padding: 0;
+            }
+
+            /* Event details */
+            .event-details {
+              margin-top: 1.5rem;
+              z-index: 2;
+              position: relative;
+            }
+
+            .event-details .join-text {
+              font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+              font-weight: 700;
+              font-size: 1.1rem;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: #1a1a2e;
+              margin-bottom: 1.2rem;
+            }
+
+            .event-details .detail-line {
+              font-family: 'Josefin Sans', sans-serif;
+              font-weight: 300;
+              font-size: 1rem;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #1a1a2e;
+              line-height: 1.6;
+            }
+
+            .event-details .rsvp-line {
+              font-family: 'Josefin Sans', sans-serif;
+              font-weight: 300;
+              font-size: 1rem;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #1a1a2e;
+              margin-top: 1.5rem;
+            }
+
+            /* Confetti */
+            .confetti-container {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              pointer-events: none;
+              z-index: 9999;
+              overflow: hidden;
+            }
+
+            .confetti {
+              position: absolute;
+              top: -10px;
+              width: 10px;
+              height: 10px;
+              opacity: 0;
+              animation: confetti-fall 4s ease-in forwards;
+            }
+
+            .confetti:nth-child(odd) { border-radius: 50%; }
+            .confetti:nth-child(3n) { width: 8px; height: 14px; border-radius: 2px; }
+            .confetti:nth-child(5n) { width: 6px; height: 6px; }
+
+            @keyframes confetti-fall {
+              0%   { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+              100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.5); }
+            }
+
+            .confetti:nth-child(1)  { left:  3%; animation-delay: 0.0s; animation-duration: 3.5s; background: #875E29; }
+            .confetti:nth-child(2)  { left:  8%; animation-delay: 0.2s; animation-duration: 4.0s; background: #22458A; }
+            .confetti:nth-child(3)  { left: 13%; animation-delay: 0.1s; animation-duration: 3.8s; background: #D9EBDB; }
+            .confetti:nth-child(4)  { left: 18%; animation-delay: 0.4s; animation-duration: 4.2s; background: #F0EEE5; }
+            .confetti:nth-child(5)  { left: 23%; animation-delay: 0.3s; animation-duration: 3.6s; background: #875E29; }
+            .confetti:nth-child(6)  { left: 28%; animation-delay: 0.5s; animation-duration: 4.1s; background: #22458A; }
+            .confetti:nth-child(7)  { left: 33%; animation-delay: 0.1s; animation-duration: 3.9s; background: #F0F7F1; }
+            .confetti:nth-child(8)  { left: 38%; animation-delay: 0.6s; animation-duration: 3.7s; background: #875E29; }
+            .confetti:nth-child(9)  { left: 43%; animation-delay: 0.2s; animation-duration: 4.3s; background: #D9EBDB; }
+            .confetti:nth-child(10) { left: 48%; animation-delay: 0.4s; animation-duration: 3.5s; background: #22458A; }
+            .confetti:nth-child(11) { left: 53%; animation-delay: 0.3s; animation-duration: 4.0s; background: #F0EEE5; }
+            .confetti:nth-child(12) { left: 58%; animation-delay: 0.7s; animation-duration: 3.8s; background: #875E29; }
+            .confetti:nth-child(13) { left: 63%; animation-delay: 0.1s; animation-duration: 4.1s; background: #22458A; }
+            .confetti:nth-child(14) { left: 68%; animation-delay: 0.5s; animation-duration: 3.6s; background: #D9EBDB; }
+            .confetti:nth-child(15) { left: 73%; animation-delay: 0.2s; animation-duration: 4.2s; background: #F0F7F1; }
+            .confetti:nth-child(16) { left: 78%; animation-delay: 0.6s; animation-duration: 3.9s; background: #875E29; }
+            .confetti:nth-child(17) { left: 83%; animation-delay: 0.3s; animation-duration: 3.7s; background: #22458A; }
+            .confetti:nth-child(18) { left: 88%; animation-delay: 0.8s; animation-duration: 4.0s; background: #F0EEE5; }
+            .confetti:nth-child(19) { left: 93%; animation-delay: 0.1s; animation-duration: 4.3s; background: #D9EBDB; }
+            .confetti:nth-child(20) { left: 97%; animation-delay: 0.4s; animation-duration: 3.5s; background: #875E29; }
+
+            /* Hide default quarto elements */
+            #title-block-header { display: none; }
+            .page-columns { padding: 0; }
+            main.content { padding: 0; margin: 0; }
+          </style>
+---
+
+::: {.confetti-container}
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+<div class="confetti"></div>
+:::
+
+::: {.invite-wrapper}
+
+[PhDs]{.top-title}
+
+[First Floor]{.side-title}
+
+::: {.photo-container}
+![](images/party-photo.png)
+:::
+
+::: {.event-details}
+
+[Join us to celebrate]{.join-text}
+
+[May 30, 2026 at 20:00<br>Propellergatan 2B, 211 15 Malmö<br>Anton, Jonathan, Jonas & Youssouf]{.detail-line}
+
+:::
+
+:::
