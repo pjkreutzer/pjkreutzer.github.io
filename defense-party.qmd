@@ -217,9 +217,6 @@ Location
 Please respond by April 20, 2026 and swish the suggested contribution of 400SEK for adults and 100SEK for children to [004673 466 6776]{.accent}. Please reach out if you would like to use another transfer than swish.
 :::
 
-::: {.rsvp-form-container}
-<iframe data-tally-src="https://tally.so/embed/EkLZdq?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0" title="RSVP"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s)}</script>
-:::
+If you forgot to RSVP but still want to join, please contact me.
 
 :::
