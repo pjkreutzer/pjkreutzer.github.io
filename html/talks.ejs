@@ -1,64 +1,61 @@
 ```{=html}
 
-<%
-  const displayConfig = items.find(i => i._display);
-  const allTalks = items.filter(item => {
+<% const displayConfig=items.find(i=> i._display);
+    const allTalks = items.filter(item => {
     if (item._display) return false;
     if (item.show === false) return false;
     return true;
-  });
+    });
 
-  function isRecent(talk) {
+    function isRecent(talk) {
     if (!displayConfig) return true;
     const year = new Date(talk.date).getFullYear();
-    if (displayConfig.since && year < displayConfig.since) return false;
-    if (displayConfig.years && !displayConfig.years.includes(year)) return false;
-    return true;
-  }
+    if (displayConfig.since && year < displayConfig.since) return false; if (displayConfig.years &&
+        !displayConfig.years.includes(year)) return false; return true; } const hasOlder=allTalks.some(t=>
+        !isRecent(t));
+        %>
 
-  const hasOlder = allTalks.some(t => !isRecent(t));
-%>
-
-<div class="talks">
-    <% for (const talk of allTalks) { %>
-        <div class="talk-entry<%= isRecent(talk) ? '' : ' talk-older' %>">
-            <div class="metadata">
-                <p class="date-location">
-                    <%= talk.date %> | <%= talk.event %>,
-                            <%= talk.location %>
-                </p>
-            </div>
-            <div class="body">
-                <p class="title">
-                    <%= talk.title %>
-                        <% if (talk.links) { %>
-                            <span class="talk-links">
-                                <% for (const link of talk.links) { %>
-                                    <span class="talk-link">
-                                        <% if (link.local) { %>
-                                            <a
-                                                href="<%- talk.path.substring(0, talk.path.lastIndexOf('/')) %>/<%- link.url %>">
-                                                <% } else { %>
-                                                    <a href="<%- link.url %>">
-                                                        <% } %>
-                                                            <i class="<%- link.icon %>"></i>
-                                                            <%= link.name %>
-                                                    </a>
+        <div class="talks">
+            <% for (const talk of allTalks) { %>
+                <div class="talk-entry<%= isRecent(talk) ? '' : ' talk-older' %>">
+                    <div class="metadata">
+                        <p class="date-location">
+                            <%= talk.date %> | <%= talk.event %>,
+                                    <%= talk.location %>
+                        </p>
+                    </div>
+                    <div class="body">
+                        <p class="title">
+                            <%= talk.title %>
+                                <% if (talk.links) { %>
+                                    <span class="talk-links">
+                                        <% for (const link of talk.links) { %>
+                                            <span class="talk-link">
+                                                <% if (link.local) { %>
+                                                    <a
+                                                        href="<%- talk.path.substring(0, talk.path.lastIndexOf('/')) %>/<%- link.url %>">
+                                                        <% } else { %>
+                                                            <a href="<%- link.url %>">
+                                                                <% } %>
+                                                                    <i class="<%- link.icon %>"></i>
+                                                                    <%= link.name %>
+                                                            </a>
+                                            </span>
+                                            <% } %>
                                     </span>
                                     <% } %>
-                            </span>
-                            <% } %>
-                </p>
-                <p class="description">
-                    <%= talk.description %>
-                </p>
-            </div>
-        </div>
-        <% } %>
-    <% if (hasOlder) { %>
-    <button class="btn btn-outline-primary talks-toggle" onclick="var t = this.parentElement; t.classList.toggle('talks-expanded'); this.textContent = t.classList.contains('talks-expanded') ? 'Show less' : 'Show all talks';">
-        Show all talks
-    </button>
-    <% } %>
+                        </p>
+                        <p class="description">
+                            <%= talk.description %>
+                        </p>
+                    </div>
+                </div>
+                <% } %>
+                    <% if (hasOlder) { %>
+                        <button class="btn btn-outline-primary talks-toggle"
+                            onclick="var t = this.parentElement; t.classList.toggle('talks-expanded'); this.textContent = t.classList.contains('talks-expanded') ? 'Show less' : 'Show all talks';">
+                            Show all talks
+                        </button>
+                        <% } %>
 </div>
 ```

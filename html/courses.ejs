@@ -1,0 +1,32 @@
+```{=html}
+<div class="talks">
+    <% for (const course of items) { %>
+        <div class="talk-entry">
+            <div class="metadata">
+                <p class="date-location">
+                    <% const years=(course.to && course.to !==course.from) ? course.from + '\u2013' + course.to : '' +
+                        course.from; %>
+                        <%= course.level %> | <%= years %>
+                </p>
+            </div>
+            <div class="body">
+                <p class="title">
+                    <%= course.title %>
+                        <% if (course.path) { %>
+                            <span class="talk-links">
+                                <span class="talk-link">
+                                    <a href="<%- course.path %>">
+                                        <i class="fa-solid fa-chalkboard"></i> Teaching materials
+                                    </a>
+                                </span>
+                            </span>
+                            <% } %>
+                </p>
+                <p class="description">
+                    <%= course.description %>
+                </p>
+            </div>
+        </div>
+        <% } %>
+</div>
+```

@@ -14,7 +14,7 @@ about:
             href: mailto:philipp_jonas.kreutzer@ekh.lu.se
 ---
 
-I am a PhD student in Economic History at Lund University. I research the transition to a bioeconomy in the Swedish forest sector.
+I received a PhD in Economic History from Lund University in April 2026. My research focused on the transition to a bioeconomy in the Swedish forest sector.
 
 The project is supervised by Josef Taalbi and Astrid Kander and is embedded in the research project SWINNO 3.0: Significant new products and processes in Sweden
 1970 to present, financed by VINNOVA (Sweden’s Governmental Agency for Innovation Systems).
@@ -25,30 +25,30 @@ The project is supervised by Josef Taalbi and Astrid Kander and is embedded in t
 
 **Ph.D. in Economic History**
 <br>Lund University, Sweden
-<br>[August 2021 - now]{.date}
+<br>[August 2021--April 2026]{.date}
 
 **M.Sc. in Innovation and Global Sustainable Development**
 <br>Lund University, Sweden
-<br>[August 2019 - June 2021]{.date}
+<br>[August 2019--June 2021]{.date}
 
 **B.Sc. in Business Psychology**
 <br>University of Applied Sciences Europe Iserlohn, Germany
-<br>[2015 - 2019]{.date}
+<br>[2015--2019]{.date}
 
 ## Work experience
 
 **Climate Finance Unit Intern**
 <br> UNEP
-<br>[February 2024 - April 2024]{.date}
+<br>[February 2024--April 2024]{.date}
 
 **Innovation Management Working Student**
 <br>Innoloft
-<br>[April 2019 - February 2020]{.date}
+<br>[April 2019--February 2020]{.date}
 
 **Business Development Intern**
 <br>Bridgefy
-<br>[March 2018 - April 2018]{.date}
+<br>[March 2018--April 2018]{.date}
 
 **HR Development, Training and Internal Communication Intern**
 <br>Lufthansa
-<br>[February 2017 - August 2017]{.date} </p>
+<br>[February 2017--August 2017]{.date} </p>

@@ -1,6 +1,16 @@
+- title: Ecological Economics
+  code: HEKA22
+  from: 2026
+  to: 2026
+  term: "Spring"
+  level: Bachelor
+  description: |
+    I am the course convener and lecturer for this introductory course on ecological economics. The course covers the foundations of ecological economics, including the concept of natural capital, ecosystem services, and the relationship between economic activity and the environment.
+
 - title: Economics of Innovation
   code: EKHM71
-  year: 2023
+  from: 2022
+  to: 2025
   term: "Fall"
   level: Master
   description: |
@@ -8,18 +18,18 @@
 
 - title: Global Sustainability
   code: EOSE 10
-  year: 2024
+  from: 2023
+  to: 2026
   term: Spring
   level: Bachelor
   description: |
     I hold one lecture and one seminar on causes and consequences of climate change and mitigation options.
   path: https://pjkreutzer.github.io/eose10
 
-# 2022
-
 - title: Innovation for Sustainability
   code: EKHM72
-  year: 2022
+  from: 2021
+  to: 2021
   term: Fall
   level: Master
   description: |

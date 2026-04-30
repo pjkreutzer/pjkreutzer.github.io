@@ -9,11 +9,9 @@ about:
 listing:
   - id: courses
     contents: "courses.yml"
-    fields: ["title", "term", "level", "description"]
-    field-display-names: 
-      term: Term
-      sort: "year desc"
-    type: default
+    fields: ["title", "level", "description", "from", "to", "path"]
+    sort: "from desc"
+    template: html/courses.ejs
     sort-ui: false
 
   - id: talks
