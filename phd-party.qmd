@@ -236,10 +236,14 @@ format:
 
 ::: {.event-details}
 
-[Join us to celebrate]{.join-text}
+[Join us to party<br>music, drinks, dancing]{.join-text}
 
-[May 30, 2026 at 20:00<br>Propellergatan 2B, 211 15 Malmö<br>Anton, Jonathan, Jonas & Youssouf]{.detail-line}
+[May 30, 2026 at 20:00<br>Propellergatan 2B, 211 15 Malmö<br>Bring your own beer & [Bring your own music](https://open.spotify.com/playlist/3p5GKW0AjgqsJpLvOrglix?si=d5R60eUUQo6JGR6ibMR2DA&pi=W5Hh8HRCTB-fv&pt=2eafb6381a048ecd959be905f4b4aa83)<br>Anton, Jonathan, Jonas & Youssouf]{.detail-line}
 
 :::
 
+:::
+
+::: {.photo-container}
+![](images/dance_2.gif)
 :::
