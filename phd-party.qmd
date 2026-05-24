@@ -245,5 +245,5 @@ format:
 :::
 
 ::: {.photo-container}
-![](images/dance_2.gif)
+![](images/dance.gif)
 :::
