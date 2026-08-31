@@ -3,7 +3,21 @@
   since: 2025
 
 # Talks (newest first)
-- title: "Trees Like Cabbages---Implications of Swedish Bioeconomy Innovation for Global Cliamate Mitigation Efforts"
+- title: "Subordinating Coupling in Sustainability Transitions"
+  date: 2026-31-08
+  location: Zurich, Switzerland
+  event: "International Sustainability Transitions Conference 2026"
+  links:
+  - name: Slides
+    url: https://pjkreutzer.github.io/files/20260831-ist.html
+  categories:
+  - innovation
+  - multi-system transitions
+  - global regimes
+  - sustainability
+  - bioeconomy
+
+- title: "Trees Like Cabbages&mdashImplications of Swedish Bioeconomy Innovation for Global Cliamate Mitigation Efforts"
   date: 2026-06-04
   location: Copenhagen, Denmark
   event: "UNEP Copenhagen Climate Center Brown Bag Seminar"
