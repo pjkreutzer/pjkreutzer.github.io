@@ -127,6 +127,10 @@ format:
               color: #872FE0;
             }
 
+            .event-details .calendar-line {
+              font-size: 0.8rem;
+            }
+
             .event-details .rsvp-line {
               font-family: 'Special Elite', 'Josefin Sans', sans-serif;
               font-weight: 400;
@@ -216,7 +220,7 @@ format:
 
 [Your Grandpas Jonathan and Jonas]{.detail-line}
 
-[🕸️ [Add to calendar](files/60years.ics)]{.detail-line}
+[🕸️ [Add to calendar](files/60years.ics)]{.detail-line .calendar-line}
 
 :::
 
