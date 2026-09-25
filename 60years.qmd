@@ -8,6 +8,7 @@ format:
       - text: |
           <script data-goatcounter="https://pjkreutzer.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
+          <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🕸️%3C/text%3E%3C/svg%3E">
           <style>
             @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Creepster&display=swap');
 
@@ -210,6 +211,8 @@ format:
 ::: {.event-details}
 
 [Spooktober 31, 2026 at 20:00<br>Dockplatsen 1, 211 15 Malmö<br>Bring your own beer & [Bring your own music](https://open.spotify.com/playlist/2osW9LPMxdvfiTHTUlYnGl?si=v1AXcYn_QZOS8I3URvkKKw)<br>Your Grandpas Jonathan and Jonas]{.detail-line}
+
+[Get ready to quiz!<br>Call Jonathan to be let in to level 5 when you arrive on [+46 72 403 81 26](tel:+46724038126)]{.detail-line}
 
 :::
 
