@@ -47,6 +47,7 @@ format:
               text-align: center;
               z-index: 2;
               position: relative;
+              display: block;
             }
 
             .top-title .line1 {
@@ -90,6 +91,7 @@ format:
               color: #89E031;
               text-shadow: 3px 3px 0 #363039;
               text-align: center;
+              display: block;
               position: relative;
               margin-top: -0.5rem;
               z-index: 2;
@@ -127,8 +129,36 @@ format:
               color: #872FE0;
             }
 
-            .event-details .calendar-line {
+            .event-details .highlight-line {
+              display: block;
+              font-family: 'Creepster', 'Josefin Sans', sans-serif;
+              font-size: 1.8rem;
+              line-height: 1.1;
+              color: #363039;
+              text-shadow: 2px 2px 0 #872FE0;
+            }
+
+            .event-details .highlight-line.second {
+              margin-top: 0.5rem;
+            }
+
+            .event-details a.calendar-button {
+              display: inline-block;
+              font-family: 'Special Elite', 'Josefin Sans', sans-serif;
               font-size: 0.8rem;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #363039;
+              text-decoration: none;
+              border: 2px solid #363039;
+              border-radius: 4px;
+              padding: 0.35rem 0.8rem;
+              margin-top: 0.5rem;
+            }
+
+            .event-details a.calendar-button:hover {
+              background-color: #363039;
+              color: #FF6F08;
             }
 
             .event-details .rsvp-line {
@@ -216,11 +246,14 @@ format:
 
 [Spooktober 31, 2026 at 20:00<br>Dockplatsen 1, 211 15 Malmö<br>Bring your own beer & [Bring your own music](https://open.spotify.com/playlist/2osW9LPMxdvfiTHTUlYnGl?si=v1AXcYn_QZOS8I3URvkKKw)]{.detail-line}
 
-[Get ready to quiz!<br>There will be a prize for the best Halloween costume.<br>Call Jonathan to be let in to level 5 when you arrive on [+46 72 403 81 26](tel:+46724038126)]{.detail-line}
+[Get ready to quiz!]{.highlight-line}
+[There will be a prize for the best Halloween costume!]{.highlight-line .second}
+
+[Call Jonathan to be let in to level 5 when you arrive on [+46 72 403 81 26](tel:+46724038126)]{.detail-line}
 
 [Your Grandpas Jonathan and Jonas]{.detail-line}
 
-[🕸️ [Add to calendar](files/60years.ics)]{.detail-line .calendar-line}
+[🕸️ Add to calendar](files/60years.ics){.calendar-button}
 
 :::
 
