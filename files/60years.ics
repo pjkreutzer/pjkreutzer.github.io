@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pjkreutzer//60years//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60years-20261031@pjkreutzer.github.io
+DTSTAMP:20260925T120000Z
+DTSTART:20261031T190000Z
+DTEND:20261101T010000Z
+SUMMARY:Jonathan and Jonas turn 60!
+LOCATION:Dockplatsen 1\, 211 15 Malmö\, Sweden
+DESCRIPTION:Get ready to quiz!\nThere will be a prize for the best Hallowee
+ n costume.\nCall Jonathan to be let in to level 5 when you arrive on +46 7
+ 2 403 81 26\nBring your own beer & your own music.\n\nhttps://pjkreutzer.g
+ ithub.io/60years.html
+URL:https://pjkreutzer.github.io/60years.html
+END:VEVENT
+END:VCALENDAR
