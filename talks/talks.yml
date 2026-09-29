@@ -3,6 +3,20 @@
   since: 2025
 
 # Talks (newest first)
+- title: "The Bioeconomy–A New Life Cycle Phase For Swedish Forestry"
+  date: 2026-09-29
+  location: Passau, Germany
+  event: "Bioeconomy Economics Conference 2026"
+  links:
+  - name: Slides
+    url: https://pjkreutzer.github.io/files/20260929-ilc.html
+  categories:
+  - innovation
+  - sustainability
+  - bioeconomy
+  - forestry
+  - industry life cycle
+
 - title: "Subordinating Coupling in Sustainability Transitions"
   date: 2026-08-31
   location: Zurich, Switzerland
