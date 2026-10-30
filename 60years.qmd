@@ -244,7 +244,7 @@ format:
 
 ::: {.event-details}
 
-[Spooktober 31, 2026 at 20:00<br>Dockplatsen 1, 211 15 Malmö<br>Bring your own beer & [Bring your own music](https://open.spotify.com/playlist/2osW9LPMxdvfiTHTUlYnGl?si=v1AXcYn_QZOS8I3URvkKKw)]{.detail-line}
+[Spooktober 31, 2026 at 20:00<br>Dockplatsen 1, 211 15 Malmö<br>Bring your own beer & [Bring your own music](https://open.spotify.com/playlist/2osW9LPMxdvfiTHTUlYnGl?si=e266e772c1504a7c&pt=01b2613d125488fb6b3ca09ea30cae24)]{.detail-line}
 
 [Get ready to quiz!]{.highlight-line}
 [There will be a prize for the best Halloween costume!]{.highlight-line .second}
