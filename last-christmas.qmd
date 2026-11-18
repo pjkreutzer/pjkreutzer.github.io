@@ -188,7 +188,7 @@ format:
 
 ::: {.event-details}
 
-[Our annual Christmas dinner, December 12, 2026 at 19:00<br>Falkenbergsgatan 7, 21424 Malmö<br>
+[Our annual Christmas dinner,<br>December 12, 2026 at 19:00<br>Falkenbergsgatan 7, 21424 Malmö<br>
 ]{.detail-line}
 
 
