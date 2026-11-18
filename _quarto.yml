@@ -18,10 +18,6 @@ website:
       - href: index.qmd#talks
         text: Talks
 
-
-    twitter-card:
-      creator: "@pjkreutzer"
-
 format:
   pjk_theme-html: 
     toc: false
